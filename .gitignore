@@ -1,0 +1,85 @@
+#ESP8266
+# 忽略 ESP-IDF 编译产物
+/build/
+*.bin
+*.elf
+*.map
+
+# 忽略 Keil 或其他 IDE 生成的临时文件
+*.uvoptx
+*.uvgui.*
+*.sdf
+*.bak
+*.dep
+
+# 忽略 IDE 配置（可选）
+.vscode/
+
+# 忽略日志与缓存
+*.log
+*.tmp
+
+# 忽略自动生成的 sdkconfig.old
+sdkconfig.old
+
+# 忽略 OS 临时文件
+.DS_Store
+Thumbs.db
+
+#忽略source insight
+/Fly_Com.si4project/
+
+/build/
+
+#STM32
+# 编译生成的二进制文件
+*.axf
+*.bin
+*.elf
+*.hex
+
+# 编译过程生成的中间文件
+*.o
+*.d
+*.map
+*.lst
+*.crf
+*.dep
+*.sct
+*.iex
+
+# Keil MDK 生成的临时配置文件
+*.uvgui.*
+*.bak
+
+# MDK 编译输出文件夹
+**/Objects/
+**/Listings/
+**/DebugConfig/
+
+# CubeMX 配置文件（如果你用了）
+*.ioc
+
+# 其他 IDE 生成的隐藏文件夹
+.vscode/
+.idea/
+
+# 日志、缓存、临时
+*.log
+*.tmp
+
+# 忽略 VS Code 项目的工作区文件
+*.code-workspace
+
+#RT_Thread通常不用更改
+/RT_Thread_Nano/
+
+#库函数通常不用更改
+/Library/
+
+#source insight不用更改
+/Fly_Control.si4project/
+
+##忽略机密文件
+CommunicationBoardCode/main/Secret.h
+CommunicationBoardCode/main/Secret.c
